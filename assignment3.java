@@ -32,6 +32,6 @@ public static void main(String[] args) { // main method: collect user input for 
         numbers[count] == stdin.nextInt();
     }
 
-    System.out.println("The sum of the numbers is: " + arraySum);
-    System.out.println("The product of the numbers is: " + arrayProduct);
+    System.out.println("The sum of the numbers is: " + arraySum); // display result for sum
+    System.out.println("The product of the numbers is: " + arrayProduct); // display result for product
 }
