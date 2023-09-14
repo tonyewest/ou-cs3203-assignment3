@@ -20,6 +20,16 @@ public static int arrayProduct(int[] numbers) { // Compute the product of the nu
     return product;
 }
 
+public static int[] reverse(int[] numbers) {
+    int reverseArray = new int[numbers.length];
+
+    for (int i = 0; i < numbers.length; i++) {
+        reverseArray[i] = reverseArray[numbers.length - 1 - i];
+    }
+
+    return reverseArray;
+}
+
 public static void main(String[] args) { // main method: collect user input for array numbers and print sum/product
     Scanner stdin = new Scanner(System.in);
     System.out.println("Hello! Enter your list of numbers:");
@@ -32,6 +42,19 @@ public static void main(String[] args) { // main method: collect user input for 
         numbers[count] == stdin.nextInt();
     }
 
+<<<<<<< HEAD
     System.out.println("The sum of the numbers is: " + arraySum); // display result for sum
     System.out.println("The product of the numbers is: " + arrayProduct); // display result for product
+=======
+    int[] reverseTest = reverse(numbers);
+    String reverse = "";
+
+    for (int i = 0; i < reverseTest.length; i++) {
+        reverse += reverseTest[i] + ", ";
+    }
+
+    System.out.println("The sum of the numbers is: " + arraySum);
+    System.out.println("The product of the numbers is: " + arrayProduct);
+    System.out.println("The reverse of your list is: " + reverse);
+>>>>>>> b1994bdfe0b599b4620a831a9cb4a6149dab4f2e
 }
