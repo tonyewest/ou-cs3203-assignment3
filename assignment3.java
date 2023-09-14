@@ -42,6 +42,14 @@ public static void main(String[] args) { // main method: collect user input for 
         numbers[count] == stdin.nextInt();
     }
 
+    int[] reverseTest = reverse(numbers);
+    String reverse = "";
+
+    for (int i = 0; i < reverseTest.length; i++) {
+        reverse += reverseTest[i] + ", ";
+    }
+
     System.out.println("The sum of the numbers is: " + arraySum);
     System.out.println("The product of the numbers is: " + arrayProduct);
+    System.out.println("The reverse of your list is: " + reverse);
 }
